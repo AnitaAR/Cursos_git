@@ -1,0 +1,38 @@
+que es working tree?
+
+R.- 
+El árbol de trabajo en Git es un directorio (y sus archivos y subdirectorios) en su sistema de archivos que está asociado con un repositorio.
+
+Está lleno de los archivos que edita, donde agrega nuevos archivos y de los cuales elimina los archivos innecesarios. Cualquier cambio en el árbol de trabajo se anota en el índice (ver más abajo) y se muestra como archivos modificados.
+
+Cuando abre los archivos para un proyecto que se gestiona como un repositorio Git, accede al Árbol de trabajo.
+
+
+
+que es staging?
+
+R.-
+Permite independizar el proceso de carga por bloques o etapas. Lo cual es muy útil y práctico cuando se trabaja con millones de datos, ya que evita tener que reiniciar el proceso entero en caso de error o avería. Por ejemplo, si se produjese un corte eléctrico, solo habría que repetir el volcado de datos del bloque específico en el que se ha producido la incidencia, estando el resto de información a buen recaudo y segura en el área de staging.
+
+Si se implementa correctamente, posibilita reiniciar las distintas fases del proceso ETL de manera independiente. Esto significa que si, por ejemplo, falla el proceso de transformación, bastaría con volver a repetir esta fase, pero no sería necesario repetir la etapa anterior: la de extracción.
+
+La compilación de los distintos bloques o etapas del proceso de staging puede incluso adaptarse a las necesidades de los clientes, aunque siempre que esté contemplado previamente en el proceso general del ETL.
+
+Al tratarse de un disco físicamente independiente, en ningún caso afecta ni ralentiza otros procesos del sistema.
+
+
+que es head de git?
+R.-
+Puedes pensar en HEAD como la "rama actual". Cuando cambia de sucursal con git checkout, la revisión HEAD cambia para apuntar a la punta de la nueva sucursal.
+
+Puedes ver lo que HEAD señala haciendo:
+
+que es branch?
+R.-
+Para entender realmente cómo ramifica Git, previamente hemos de examinar la forma en que almacena sus datos. Recordando lo citado en el capítulo 1, Git no los almacena de forma incremental (guardando solo diferencias), sino que los almacena como una serie de instantáneas (copias puntuales de los archivos completos, tal y como se encuentran en ese momento).
+
+que es un branch modeling? 
+R.-
+Creado por Vincent Driessen, es un modelo de flujo de trabajo para Git que da muchísima importancia a las ramas y que de hecho las crea de varios tipos, de forma temática, tal que cada tipo de rama es creada con un objetivo en concreto.
+
+
